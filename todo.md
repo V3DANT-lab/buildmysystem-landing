@@ -1,0 +1,3 @@
+- [x] Verify the repository’s current Git and remote configuration.
+- [x] Create or configure a private GitHub repository destination.
+- [ ] Push the completed BuildMySystem landing page source and confirm the repository URL.
