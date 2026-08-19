@@ -26,6 +26,16 @@ pnpm check
 pnpm build
 ```
 
+## Live deployment
+
+The production site is available at **[buildmysystem-landing.netlify.app](https://buildmysystem-landing.netlify.app)**. It is deployed on Netlify from the production project directory and is configured as the current public deployment.
+
+| Deployment detail | Value |
+| --- | --- |
+| **Hosting provider** | Netlify |
+| **Production URL** | [https://buildmysystem-landing.netlify.app](https://buildmysystem-landing.netlify.app) |
+| **Site management** | [Open the Netlify project](https://app.netlify.com/projects/buildmysystem-landing) |
+
 ## Project structure
 
 | Path | Purpose |

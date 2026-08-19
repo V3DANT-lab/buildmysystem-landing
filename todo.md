@@ -3,3 +3,5 @@
 - [x] Push the completed BuildMySystem landing page source and confirm the repository URL.
 - [x] Add a project README with usage and development guidance.
 - [x] Credit Vedu as the project author and publish the documentation update.
+- [x] Inspect the Netlify connection and deploy the production build.
+- [x] Document the live Netlify deployment in the README and publish the change to GitHub.
