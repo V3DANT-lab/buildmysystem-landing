@@ -36,6 +36,21 @@ const faqs = [
   },
 ];
 
+const assets = {
+  heroPoster: "/media/buildmysystem-hero-poster.jpg",
+  heroVideo: "/media/buildmysystem-hero-video.mp4",
+  mark: "/media/buildmysystem-mark.png",
+  faqTexture: "/media/buildmysystem-faq-texture.jpg",
+  faqSculpture: "/media/buildmysystem-faq-sculpture.jpg",
+};
+
+const managedAssets = {
+  heroVideo: "/manus-storage/buildmysystem-hero-video_ddc0ffd6.mp4",
+  mark: "/manus-storage/buildmysystem-mark_79a02e76.png",
+  faqTexture: "/manus-storage/buildmysystem-faq-texture_977e0a0e.jpg",
+  faqSculpture: "/manus-storage/buildmysystem-faq-sculpture_445b9413.jpg",
+};
+
 export default function Home() {
   const moveToFaq = () => {
     document.getElementById("faq")?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -50,10 +65,11 @@ export default function Home() {
           loop
           muted
           playsInline
-          poster="/manus-storage/buildmysystem-hero-poster_38a218ba.jpg"
+          poster={assets.heroPoster}
           aria-label="Abstract systems visualization"
         >
-          <source src="/manus-storage/buildmysystem-hero-video_ddc0ffd6.mp4" type="video/mp4" />
+          <source src={assets.heroVideo} type="video/mp4" />
+          <source src={managedAssets.heroVideo} type="video/mp4" />
         </video>
         <div className="absolute inset-0 -z-20 bg-[#020505]/58" />
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(2,5,5,0.98)_0%,rgba(2,5,5,0.84)_42%,rgba(2,5,5,0.38)_78%,rgba(2,5,5,0.66)_100%)]" />
@@ -68,7 +84,11 @@ export default function Home() {
             <a href="#top" className="group flex items-center gap-3" aria-label="BuildMySystem home">
               <span className="flex h-11 w-11 items-center justify-center rounded-[0.85rem] bg-[#d5ff53] p-2 shadow-[0_0_40px_rgba(213,255,83,0.13)] transition-transform duration-300 ease-out group-hover:-rotate-6">
                 <img
-                  src="/manus-storage/buildmysystem-mark_79a02e76.png"
+                  src={assets.mark}
+                  onError={(event) => {
+                    event.currentTarget.onerror = null;
+                    event.currentTarget.src = managedAssets.mark;
+                  }}
                   alt=""
                   className="h-full w-full object-contain"
                 />
@@ -152,7 +172,11 @@ export default function Home() {
 
       <section id="faq" className="relative isolate overflow-hidden bg-[#f2f2ec] px-5 py-24 sm:px-8 sm:py-32 lg:px-12 lg:py-40">
         <img
-          src="/manus-storage/buildmysystem-faq-texture_977e0a0e.jpg"
+          src={assets.faqTexture}
+          onError={(event) => {
+            event.currentTarget.onerror = null;
+            event.currentTarget.src = managedAssets.faqTexture;
+          }}
           alt=""
           className="pointer-events-none absolute inset-0 -z-20 h-full w-full object-cover opacity-[0.13] mix-blend-multiply"
         />
@@ -175,7 +199,11 @@ export default function Home() {
             </p>
             <div className="relative mt-12 max-w-[20rem] overflow-hidden rounded-[1.45rem] bg-[#dce3d8] shadow-[0_24px_55px_rgba(18,32,23,0.12)]">
               <img
-                src="/manus-storage/buildmysystem-faq-sculpture_445b9413.jpg"
+                src={assets.faqSculpture}
+                onError={(event) => {
+                  event.currentTarget.onerror = null;
+                  event.currentTarget.src = managedAssets.faqSculpture;
+                }}
                 alt="Abstract connected modular forms"
                 className="block w-full mix-blend-multiply"
               />

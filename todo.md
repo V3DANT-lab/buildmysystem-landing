@@ -7,3 +7,5 @@
 - [x] Document the live Netlify deployment in the README and publish the change to GitHub.
 - [x] Inspect the Netlify 404 and determine the correct static publish directory.
 - [x] Redeploy the built static site and confirm that the public URL loads successfully.
+- [x] Bundle the hero video and generated visual assets into the deployable static build.
+- [x] Redeploy the complete Netlify bundle and verify the live page and media responses.
