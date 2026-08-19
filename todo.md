@@ -1,3 +1,5 @@
 - [x] Verify the repository’s current Git and remote configuration.
 - [x] Create or configure a private GitHub repository destination.
 - [x] Push the completed BuildMySystem landing page source and confirm the repository URL.
+- [x] Add a project README with usage and development guidance.
+- [x] Credit Vedu as the project author and publish the documentation update.
