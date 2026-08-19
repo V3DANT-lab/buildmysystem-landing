@@ -5,3 +5,5 @@
 - [x] Credit Vedu as the project author and publish the documentation update.
 - [x] Inspect the Netlify connection and deploy the production build.
 - [x] Document the live Netlify deployment in the README and publish the change to GitHub.
+- [x] Inspect the Netlify 404 and determine the correct static publish directory.
+- [x] Redeploy the built static site and confirm that the public URL loads successfully.
